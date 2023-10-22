@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(../1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity:1 ;
+        }
+        .parent{
+            width: 50%;
+            height: 500px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px solid gray;
+            border: 1px solid black;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .child{
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+            background-color: red;
+            animation: bounce 0.9s  infinite;
+        }
+        @keyframes bounce {
+            10%{
+                /* background-color: yellow; */
+               
+                width: 50px;
+                height: 50px;
+             
+                /* background-color: blue; */
+                /* background-color: red; */
+            }
+            
+            50%{
+                width: 57px;
+                height: 40px;
+                transform:translateY(230px); 
+
+                /* background-color: yellow;  */
+                
+                /* border: 2px solid green/; */
+                
+            }
+            100%{
+                
+                   transform: translateY(0); 
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div class="parent" style="background-image: url(); ;" >
+            <div class="child">
+
+            </div>
+
+
+        </div>    
+        <DIV>
+            <p style="margin-left: 350px; font-size: 20px; font-weight: bold;">simple bouncing ball animation</p>
+        </DIV>
+</body>
+</html>
